@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+      <ul>
+        <% for (var x in users) { %>
+        <li>Name: <%= users[x].name %>;  Age: <%= users[x].age %></li>
+        <% } %>
+      </ul>
+
+    <form action="/users" method="post">
+      <p>
+      <label for="name">Your name: </label>
+      <input type='text' name='name' class="right">
+     </p>
+
+     <p>
+      <label for="age">Your age: </label>
+      <input type='text' name='age' class="right">
+     </p>
+
+     <p>
+       <input type='submit' value='Button' class="right">
+     </p>
+
+    </form>
+  </body>
+</html>
